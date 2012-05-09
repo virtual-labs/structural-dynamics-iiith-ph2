@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Simple Harmonic Oscillator</title>
+
+        <vendor>Simple Harmonic Oscillator</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+"
+              href="http://java.sun.com/products/autodl/j2se"
+              max-heap-size="128m" />
+
+        <jar href="citevlab.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Simple Harmonic Oscillator Applet"
+         main-class="cite.vlab.earthquake.demos.Pendulum$MyApplet"
+         width="300"
+         height="500">
+     </applet-desc>
+</jnlp>	
