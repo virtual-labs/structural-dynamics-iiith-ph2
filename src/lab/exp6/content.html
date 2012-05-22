@@ -28,7 +28,7 @@ edit -->
       <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
-      <a href="index.php">Strength of Materials Lab</a>	
+      <a href="index.php">Structural Dynamics Lab</a>	
     </div>
 
     <!-- Add any additional element you want to add to the lab 
@@ -51,7 +51,7 @@ edit -->
       <header id="experiment-article-heading" class="heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
-        Tensile Test
+        Vibration of M.D.O.F system
         <!-- Add any additional element if required with proper 
         enclosing-->
       </header>
@@ -92,20 +92,12 @@ edit -->
           <div id="experiment-article-section-1-content" 
           class="content">	
             <p align="justify">
-            A tensile test, also known as tension test, is probably the most fundamental type of mechanical test you can perform on material. Tensile tests are simple, relatively inexpensive, and fully standardised. 
-
-	By pulling on something, you will very quickly determine how the material will react to forces being applied in tension. As the material is being pulled, you will find its strength along with how much it will elongate.
-Tensile testing is one of the more basic tests to determine stress – strain relationships. A simple uniaxial test consists of slowly pulling a sample of material in tension until it breaks. 
+            All the real structures are actually infinite degree of freedom systems. However, for the purpose of studying their dynamic behaviour we can idealize them into single or multi degree of freedom systems. If mass of the structure can be lumped at different locations in the structure then the dynamic behaviour consists of same number of modes of vibration. Such structure is called a multi degree of freedom system. Typically in a multi-storey building, masses of different elements can be lumped at centre of mass at each slab level.<br><br>
+<img src="5.jpg"/>
 
  </p>
 
-            <p align="justify">
-            Tensile testing is one of the more basic tests to determine stress – strain relationships. A simple uniaxial test consists of slowly pulling a sample of material in tension until it breaks. Test specimens for tensile testing are generally either circular or rectangular with larger ends to facilitate gripping the sample.
-            </p>
-<p>   
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-
+        
         </div>
 
 
@@ -133,18 +125,29 @@ Tensile testing is one of the more basic tests to determine stress – strain re
         <div id="experiment-article-section-2-content" 
         class="content">
           <p align="justify">
-          The tensile test is a test performed to know the ductility of the particular material. In practical, the test is carried out on universal testing machine (also called the UTM). When tension is applied to a particular member, the stresses are developed in the member at the centre. At a particular point of time during the testing, the member breaks.  
-          </p>
-          <p align="justify">
-         <strong> Young’s modulus:</strong> Young’s modulus is defined as the ratio of stress to strain. It is denoted by ‘E’. 1. Young's Modulus (Modulus of Elasticity) In the region on the stress-strain curve where the stress changes linearly with the strain, the Young’s modulus (Modulus of elasticity, E) is defined as the ratio of stress and strain. Value of the Young’s modulus is a constant for a given material.
-          </p> 
+  Equation of motion of multi degree of freedom system in matrix form -- <br>
+[m]{x''} + [x]{x'} + [k]{x} = -xg(t)[m]{I}<br><br>
+
+where, <br>
+[m] = Mass Matrix.<br>
+[k] = Stiffness Matrix.<br>
+[c] = Damping Matrix<br>
+{I} = Unit Vector<br>
+x''g(t) = Ground Motion<br><br>
+
+
+The physical coordinates {x} may be related with normal or prinicipal coordinates {q} as,<br> 
+{x} = [φ]{q}<br>
+where,[φ] = Modal Matrix.<br> 
+
+Time Derivate of {x} are <br>
+{x'} = [φ]{q'}<br>
+{x''} = [φ]{q''}<br>
+</p> 
 
 <p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
+        <a target="_blank" href="6.Theory.pdf">Read More</a>
         </p>
-          
-
-
         </div>
       </section>
 
@@ -165,19 +168,12 @@ Tensile testing is one of the more basic tests to determine stress – strain re
         <div id="experiment-article-section-3-content" 
         class="content">
           <p align="justify">
-            To determine the strength and other properties of various materials and other several elastic and plastic properties of various materials.
+          To find out natural frequencies and natural mode shapes of multidegree of freedom system. To find out response of each floor to a given ground motion.<br><br>
 
-          </p>
-<p>
-OR
-</p> 
-<p align="justify">
-To develop an understanding of stress-strain curves of materials, and learn how to use them to determine various mechanical properties of ductile and brittle materials.
-</p>       
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-    
+<img src="concept_modf.jpg" />
+
+          </p><br><br>
+
 
 
         </div>
@@ -201,8 +197,9 @@ To develop an understanding of stress-strain curves of materials, and learn how 
         <div id="experiment-article-section-4-content" 
         class="content">
           <p>
-<a target="_blank" href="Animation/Tension.swf">Go to Flash view on Tensile Test Experiment(Click here)</a><br><br>
-            <a target="_blank" href="vlab2/test_tensile.html">Go to Virtual lab on Tensile Test Experiment(Click here)</a>
+<a target="_blank" href="exp5.swf">Go to Flash view on Vibration of M.D.O.F system - Undamped Free Vibration(Click here)</a><br><br>
+
+            <a target="_blank" href="ve_mdof.html">Go to Virtual lab on Vibration of M.D.O.F system(Click here)</a>
  
 	        
             
@@ -226,34 +223,26 @@ To develop an understanding of stress-strain curves of materials, and learn how 
 
         <div id="experiment-article-section-5-content" 
         class="content">
-           <h3>Observation 1:</h3> 
-          <ol> 
-            
-            <li>
-         Initial cross sectional area of specimen, ai = 
-            </li> 
+<p align="justify">
+<strong>Observation 1:</strong> Finding natural frequencies and mode shapes <br><br>
 
-            <li>
-          Initial length of the specimen, li =  
-            </li> 
-<li>
-          Ultimate load after specimen breaks =
-            </li>
-<li>
-           Final length of the specimen after breaking, lf =
-            </li>
-<li>
-           Cross sectional area at the breaking place, af =      
-            </li>
+1. Take n storey structure. <br>
+2. Input mass and stiffness of each storey <br>
+3. Run the experiment. User can see eigen values (natural frequencies) and eigen vectors (mode shapes). <br>
+4. Use may note the eigen vectors and check for modal orthogonality. <br><br>
 
-          </ol>
+<strong>Observation 2:</strong> Find the response of the structure to given ground motion. <br><br>
 
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
+5. Take n storey structure. <br>
+6. Input mass and stiffness of each storey.<br> 
+7. Select ground motion and also damping. <br>
+8. Run the experiment. User can find the response of the each floor level on the screen. User can also find the response of each mode. <br>
+</p> 
+          
 
-         
-
+<p><br><br>
+         <a target="_blank" href="Multidegree.htm">Go to Manual view on Vibration of M.D.O.F system(Click here)</a><br><br>
+</p>
           </div>
 
         </section>
@@ -274,33 +263,44 @@ To develop an understanding of stress-strain curves of materials, and learn how 
           <div id="experiment-article-section-6-content" 
           class="content">
             
-            <p>
+             <p>
               
               <b>Q1.</b> 
-              Which steel have you tested? What is its carbon content?   
-               <br/><br/> 
+              In multi-storey structure mass should be lumped at centre of columns.  <br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q1" id="q1" value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q2.</b> 
-              In what region of a stress vs. strain graph do you find Young’s Modulus? <br/><br/> 
+              Number of mode shapes is equal to number of degrees of freedom.<br> 
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q2" id="q2"value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q3.</b> 
-              Why do you think we remove the extensometer after yielding occurs? <br/><br/> 
+              For even number of floors modes shapes will not be orthogonal.   <br> 
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q3" id="q3"value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q4.</b> 
-              What general information is obtained from the tensile test regarding the properties of the material? <br/><br/> 
+              Lowest eigen value is considered as most useful valu.  <br> 
+              <input type="radio" name="q4" id="q4" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q4" id="q4" value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q5.</b> 
-              Which stress have you calculated: Nominal stress or true stress?  <br/><br/> 
-              <b>Q6.</b>
-              What kind of fracture has occurred and why?  <br/><br/>
-              <b>Q7.</b>
-              Which is the most ductile material? What is its elongation?  <br/><br/>
-
+              All the modes contribute equally to the complete response of the building. <br> 
+              <input type="radio" name="q5" id="q5" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q5" id="q5"value="0">
+                <font color="red"> False </font> <br/><br/> 
+               
             </p>
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-
 
 
 
@@ -326,17 +326,7 @@ To develop an understanding of stress-strain curves of materials, and learn how 
 	    <p>
 	      Procedure for the experiment is as follows.
 	    </p>
-<p align="justify">
-1. The load pointer is set at zero by adjusting the initial the initial setting mode. <br>
-2. The dial gauge is fixed for measuring elongation of small amounts.<br>
-3. Measure the diameter of the test piece with the help of a vernier calliper at least at three pieces and determine the mean value. Also mark the gauge length.<br>
-4.  Now the specimen is gripped between the upper and middle cross head jaws of the machine.<br>
-5. Start the machine and the specimen is gradually loaded. Note down the load and its corresponding dial gauge reading. The observations are taken until the  specimen breaks<br>
-6. Plot the graph between stress vs. strain.</p>
 
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
 
 	  </div>
 	
@@ -360,16 +350,16 @@ To develop an understanding of stress-strain curves of materials, and learn how 
           class="content">
             <ul>	
               <li>
-                <a href="http://www.instron.in/wa/applications/test_types/tension/default.aspx">http://www.instron.in/wa/applications/test_types/tension/default.aspx</a>
+                <a href="http://ocw.mit.edu/NR/rdonlyres/Aeronautics-and-Astronautics/16-20Structural-%20MechanicsFall2002/7E90098F-C973-4B10-9C91-94730623C3B9/0/unit22.pdf">http://ocw.mit.edu/NR/rdonlyres/Aeronautics-and-Astronautics/16-20Structural-%20MechanicsFall2002/7E90098F-C973-4B10-9C91-94730623C3B9/0/unit22.pdf</a>  
               </li>
               <li>
-                <a href="http://en.wikipedia.org/wiki/Tensile_strength">http://en.wikipedia.org/wiki/Tensile_strength</a>
+                <a href="http://ece.olin.edu/dynamics/assign/ps5_f08.pdf">http://ece.olin.edu/dynamics/assign/ps5_f08.pdf</a>
               </li>  
               <li>
-                <a href="http://civilx.unm.edu/laboratories_ss/mechmat/tensilesteel.html">http://civilx.unm.edu/laboratories_ss/mechmat/tensilesteel.html</a> 
+                <a href="http://www.aerostudents.com/files/vibrations/multipleDegreeOfFreedomSystems.pdf">http://www.aerostudents.com/files/vibrations/multipleDegreeOfFreedomSystems.pdf</a>
               </li>
 <li>
-                Strength of materials by Dr.R.K.Bansal.
+                "Earthquake Resistant Design of Structures" by Pankaj Agarwal, Manish Shrikande
               </li>
             </ul>
           </div>
