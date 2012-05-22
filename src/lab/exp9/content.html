@@ -28,7 +28,7 @@ edit -->
       <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
-      <a href="index.php">Strength of Materials Lab</a>	
+      <a href="index.php">Structural Dynamics Lab</a>	
     </div>
 
     <!-- Add any additional element you want to add to the lab 
@@ -51,7 +51,7 @@ edit -->
       <header id="experiment-article-heading" class="heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
-        Tensile Test
+        Continuous Systems
         <!-- Add any additional element if required with proper 
         enclosing-->
       </header>
@@ -92,20 +92,12 @@ edit -->
           <div id="experiment-article-section-1-content" 
           class="content">	
             <p align="justify">
-            A tensile test, also known as tension test, is probably the most fundamental type of mechanical test you can perform on material. Tensile tests are simple, relatively inexpensive, and fully standardised. 
-
-	By pulling on something, you will very quickly determine how the material will react to forces being applied in tension. As the material is being pulled, you will find its strength along with how much it will elongate.
-Tensile testing is one of the more basic tests to determine stress – strain relationships. A simple uniaxial test consists of slowly pulling a sample of material in tension until it breaks. 
+           Some special type of structures like cooling towers , bunkers and silos are considered as continuous systems. These type of structures have importance in their functionality. Some of the continuous systems may have different type of profiles like rectangular, trapezoidal, hyperboloid etc. Their response due to dynamic loading varies for different profiles<br><br>
+<img src="01.jpg"/>
 
  </p>
 
-            <p align="justify">
-            Tensile testing is one of the more basic tests to determine stress – strain relationships. A simple uniaxial test consists of slowly pulling a sample of material in tension until it breaks. Test specimens for tensile testing are generally either circular or rectangular with larger ends to facilitate gripping the sample.
-            </p>
-<p>   
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-
+        
         </div>
 
 
@@ -133,18 +125,18 @@ Tensile testing is one of the more basic tests to determine stress – strain re
         <div id="experiment-article-section-2-content" 
         class="content">
           <p align="justify">
-          The tensile test is a test performed to know the ductility of the particular material. In practical, the test is carried out on universal testing machine (also called the UTM). When tension is applied to a particular member, the stresses are developed in the member at the centre. At a particular point of time during the testing, the member breaks.  
-          </p>
-          <p align="justify">
-         <strong> Young’s modulus:</strong> Young’s modulus is defined as the ratio of stress to strain. It is denoted by ‘E’. 1. Young's Modulus (Modulus of Elasticity) In the region on the stress-strain curve where the stress changes linearly with the strain, the Young’s modulus (Modulus of elasticity, E) is defined as the ratio of stress and strain. Value of the Young’s modulus is a constant for a given material.
-          </p> 
+          The continuous systems are more complex systems for doing their analysis. So for developing analysis of this complex system, we will treat it as SDOF system which usually calls as generalized SDOF systems. <br><br>
+
+Equation of motion for a generalized SDOF system is,<br>
+<img src="eq1.PNG"/><br>
+where, <br>
+<img src="eq2.PNG"/><br>
+
+</p> 
 
 <p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
+        <a target="_blank" href="9.theory.pdf">Read More</a>
         </p>
-          
-
-
         </div>
       </section>
 
@@ -165,19 +157,12 @@ Tensile testing is one of the more basic tests to determine stress – strain re
         <div id="experiment-article-section-3-content" 
         class="content">
           <p align="justify">
-            To determine the strength and other properties of various materials and other several elastic and plastic properties of various materials.
+          To know the response of structure for different profiles and for different behavior (shear(fixed), bending, shear(hinge)) of the structure.<br><br>
 
-          </p>
-<p>
-OR
-</p> 
-<p align="justify">
-To develop an understanding of stress-strain curves of materials, and learn how to use them to determine various mechanical properties of ductile and brittle materials.
-</p>       
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-    
+<img src="01.jpg" />
+
+          </p><br><br>
+
 
 
         </div>
@@ -201,9 +186,11 @@ To develop an understanding of stress-strain curves of materials, and learn how 
         <div id="experiment-article-section-4-content" 
         class="content">
           <p>
-<a target="_blank" href="Animation/Tension.swf">Go to Flash view on Tensile Test Experiment(Click here)</a><br><br>
-            <a target="_blank" href="vlab2/test_tensile.html">Go to Virtual lab on Tensile Test Experiment(Click here)</a>
+<a target="_blank" href="Coolingtowers.swf">Go to Flash view on Continuous Systems(Click here)</a><br><br>
  
+            <a target="_blank" href="ve_csystems1.html">Go to Virtual lab on Continuous Systems - Rectangular Profile(Click here)</a><br><br>
+             <a target="_blank" href="ve_csystems2.html">Go to Virtual lab on Continuous Systems - Trapezoidal Profile(Click here)</a><br><br>
+            <a target="_blank" href="ve_csystems3.html">Go to Virtual lab on Continuous Systems - Hyperboloid Profile(Click here)</a>
 	        
             
           </p>
@@ -226,33 +213,18 @@ To develop an understanding of stress-strain curves of materials, and learn how 
 
         <div id="experiment-article-section-5-content" 
         class="content">
-           <h3>Observation 1:</h3> 
-          <ol> 
-            
-            <li>
-         Initial cross sectional area of specimen, ai = 
-            </li> 
+<p align="justify">
+Start the experiment with given values of structure and with given earthquake data. Observe the response of structure for different type of profiles.<br><br>
 
-            <li>
-          Initial length of the specimen, li =  
-            </li> 
-<li>
-          Ultimate load after specimen breaks =
-            </li>
-<li>
-           Final length of the specimen after breaking, lf =
-            </li>
-<li>
-           Cross sectional area at the breaking place, af =      
-            </li>
+<strong>Stage 1:</strong><br> 
+While coming to this stage, user can be able to change behavior of structure and its height. Observe the response of structure with modified parameters.<br><br>	
 
-          </ol>
+<strong>Stage 2:</strong><br> 
+In this last stage, user will change all the displayed parameters. User can observe the response of structure at different level in its height. <br>
 
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
+</p> 
+          
 
-         
 
           </div>
 
@@ -274,33 +246,32 @@ To develop an understanding of stress-strain curves of materials, and learn how 
           <div id="experiment-article-section-6-content" 
           class="content">
             
-            <p>
+             <p>
               
               <b>Q1.</b> 
-              Which steel have you tested? What is its carbon content?   
-               <br/><br/> 
+              In continuous system the material properties are same throughout the section  <br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q1" id="q1" value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q2.</b> 
-              In what region of a stress vs. strain graph do you find Young’s Modulus? <br/><br/> 
+              Dimensions of the members are same throughout the structure in continuous system.<br> 
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q2" id="q2"value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q3.</b> 
-              Why do you think we remove the extensometer after yielding occurs? <br/><br/> 
+              Using generalized mass and stiffness we can know response.   <br> 
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q3" id="q3"value="0">
+                <font color="red"> False </font> <br/><br/> 
               
-              <b>Q4.</b> 
-              What general information is obtained from the tensile test regarding the properties of the material? <br/><br/> 
-              
-              <b>Q5.</b> 
-              Which stress have you calculated: Nominal stress or true stress?  <br/><br/> 
-              <b>Q6.</b>
-              What kind of fracture has occurred and why?  <br/><br/>
-              <b>Q7.</b>
-              Which is the most ductile material? What is its elongation?  <br/><br/>
-
+               
+               
             </p>
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-
 
 
 
@@ -326,17 +297,7 @@ To develop an understanding of stress-strain curves of materials, and learn how 
 	    <p>
 	      Procedure for the experiment is as follows.
 	    </p>
-<p align="justify">
-1. The load pointer is set at zero by adjusting the initial the initial setting mode. <br>
-2. The dial gauge is fixed for measuring elongation of small amounts.<br>
-3. Measure the diameter of the test piece with the help of a vernier calliper at least at three pieces and determine the mean value. Also mark the gauge length.<br>
-4.  Now the specimen is gripped between the upper and middle cross head jaws of the machine.<br>
-5. Start the machine and the specimen is gradually loaded. Note down the load and its corresponding dial gauge reading. The observations are taken until the  specimen breaks<br>
-6. Plot the graph between stress vs. strain.</p>
 
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
 
 	  </div>
 	
@@ -360,17 +321,15 @@ To develop an understanding of stress-strain curves of materials, and learn how 
           class="content">
             <ul>	
               <li>
-                <a href="http://www.instron.in/wa/applications/test_types/tension/default.aspx">http://www.instron.in/wa/applications/test_types/tension/default.aspx</a>
+                Watanabe, T., Forced vibration of continuous system with nonlinear boundary conditions , ASME Journal of Mechanical Design 100, 1978, 487 491
               </li>
               <li>
-                <a href="http://en.wikipedia.org/wiki/Tensile_strength">http://en.wikipedia.org/wiki/Tensile_strength</a>
+                “Dynamics of structures” by Anil K chopra. 
               </li>  
               <li>
-                <a href="http://civilx.unm.edu/laboratories_ss/mechmat/tensilesteel.html">http://civilx.unm.edu/laboratories_ss/mechmat/tensilesteel.html</a> 
+               Aoki, S. and Watanabe, T., Forced vibration of continuous system with unsymmetrical hysteresis loop characteristics , in Proceedings of Asia-Pacific Vibration Conference 93, Vol. 4, Japan Society of Mechanical Engineers, 1993, pp. 1680 1685.
               </li>
-<li>
-                Strength of materials by Dr.R.K.Bansal.
-              </li>
+
             </ul>
           </div>
 
