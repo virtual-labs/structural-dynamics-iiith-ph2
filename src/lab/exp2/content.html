@@ -28,7 +28,7 @@ edit -->
       <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
-      <a href="index.php">Strength of Materials Lab</a>	
+      <a href="index.php">Structural Dynamics Lab</a>	
     </div>
 
     <!-- Add any additional element you want to add to the lab 
@@ -51,7 +51,7 @@ edit -->
       <header id="experiment-article-heading" class="heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
-        Tensile Test
+        Free vibration of S.D.O.F system
         <!-- Add any additional element if required with proper 
         enclosing-->
       </header>
@@ -92,20 +92,12 @@ edit -->
           <div id="experiment-article-section-1-content" 
           class="content">	
             <p align="justify">
-            A tensile test, also known as tension test, is probably the most fundamental type of mechanical test you can perform on material. Tensile tests are simple, relatively inexpensive, and fully standardised. 
-
-	By pulling on something, you will very quickly determine how the material will react to forces being applied in tension. As the material is being pulled, you will find its strength along with how much it will elongate.
-Tensile testing is one of the more basic tests to determine stress – strain relationships. A simple uniaxial test consists of slowly pulling a sample of material in tension until it breaks. 
+            Free vibration is a vibration in which energy is neither added to nor removed from the vibrating system. It will just keep vibrating forever at the same amplitude or a structure is said to be undergoing free vibration when it is disturbed from its static equilibrium position without any external dynamic excitation.<br><br>
+<img src="freeVib.jpg"/>
 
  </p>
 
-            <p align="justify">
-            Tensile testing is one of the more basic tests to determine stress – strain relationships. A simple uniaxial test consists of slowly pulling a sample of material in tension until it breaks. Test specimens for tensile testing are generally either circular or rectangular with larger ends to facilitate gripping the sample.
-            </p>
-<p>   
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-
+        
         </div>
 
 
@@ -133,18 +125,30 @@ Tensile testing is one of the more basic tests to determine stress – strain re
         <div id="experiment-article-section-2-content" 
         class="content">
           <p align="justify">
-          The tensile test is a test performed to know the ductility of the particular material. In practical, the test is carried out on universal testing machine (also called the UTM). When tension is applied to a particular member, the stresses are developed in the member at the centre. At a particular point of time during the testing, the member breaks.  
-          </p>
+          Free vibration is initiated by disturbing the system from its static equilibrium position by imparting the mass some displacement u(0) and velocity u’(0) at time t=0.<br> 
+There are two cases in free vibration <br>
+1. undamped free vibration <br>
+2. damped free vibration <br></p>
+
           <p align="justify">
-         <strong> Young’s modulus:</strong> Young’s modulus is defined as the ratio of stress to strain. It is denoted by ‘E’. 1. Young's Modulus (Modulus of Elasticity) In the region on the stress-strain curve where the stress changes linearly with the strain, the Young’s modulus (Modulus of elasticity, E) is defined as the ratio of stress and strain. Value of the Young’s modulus is a constant for a given material.
-          </p> 
+   <strong>Undamped free vibration :</strong><br>
+   The governing equation for undamped free vibration is<br>
+<img src="equ7.PNG" /><br>
+
+   where,<br>
+m = mass ,u'' = acceleration, k = stiffness, u = displacement. <br>
+The solution to homogeneous equation is : <br>
+
+<img src="equ8.PNG" /><br>
+where, <br>
+u(0) = initial displacement ,u'(0) = initial velocity. <br>
+
+Here in this solution we can observe that the system will vibrate only if initial displacement and/or initial velocity is given. <br>
+</p> 
 
 <p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
+        <a target="_blank" href="2.theory.pdf">Read More</a>
         </p>
-          
-
-
         </div>
       </section>
 
@@ -165,19 +169,12 @@ Tensile testing is one of the more basic tests to determine stress – strain re
         <div id="experiment-article-section-3-content" 
         class="content">
           <p align="justify">
-            To determine the strength and other properties of various materials and other several elastic and plastic properties of various materials.
+          To understand the behavior of single degree of freedom system vibrating with initial excitation (i.e, initial displacement and/or initial velocity and with or without damping).<br>
 
-          </p>
-<p>
-OR
-</p> 
-<p align="justify">
-To develop an understanding of stress-strain curves of materials, and learn how to use them to determine various mechanical properties of ductile and brittle materials.
-</p>       
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-    
+<img src="2.jpg" />
+
+          </p><br><br>
+
 
 
         </div>
@@ -201,8 +198,9 @@ To develop an understanding of stress-strain curves of materials, and learn how 
         <div id="experiment-article-section-4-content" 
         class="content">
           <p>
-<a target="_blank" href="Animation/Tension.swf">Go to Flash view on Tensile Test Experiment(Click here)</a><br><br>
-            <a target="_blank" href="vlab2/test_tensile.html">Go to Virtual lab on Tensile Test Experiment(Click here)</a>
+<a target="_blank" href="undamped_freevib.swf">Go to Flash view on Free Vibration of S.D.O.F system - Undamped Free Vibration(Click here)</a><br><br>
+<a target="_blank" href="dampedfree.swf">Go to Flash view on Free Vibration of S.D.O.F system - Damped Free Vibration(Click here)</a><br><br>
+            <a target="_blank" href="ve_freevibbody.html">Go to Virtual lab on Free Vibration of S.D.O.F system(Click here)</a>
  
 	        
             
@@ -226,34 +224,27 @@ To develop an understanding of stress-strain curves of materials, and learn how 
 
         <div id="experiment-article-section-5-content" 
         class="content">
-           <h3>Observation 1:</h3> 
-          <ol> 
-            
-            <li>
-         Initial cross sectional area of specimen, ai = 
-            </li> 
+<p align="justify">
+Start the experiment with some default values of initial displacement (u=10mm) and initial velocity (v=5m/s). and zero damping. Pause the experiment after a few cycles. <br>
 
-            <li>
-          Initial length of the specimen, li =  
-            </li> 
-<li>
-          Ultimate load after specimen breaks =
-            </li>
-<li>
-           Final length of the specimen after breaking, lf =
-            </li>
-<li>
-           Cross sectional area at the breaking place, af =      
-            </li>
+<strong>Observation 1: </strong><br>
+Observe the time period (T) and amplitude.<br>
+Again start the experiment freshly, this time modifying the values of initial conditions.<br>
+Observe that the time period is independent of initial conditions.<br>
+<strong>Observation 2:</strong> Effect of structures properties on time period <br>
 
-          </ol>
+Modify the value of mass and observe the change in time period.<br>
+Run the experiment for different values of mass and note the time period every time mass is changed<br>
+Draw the graph between mass and time period.<br>
+</p> 
+          
 
 <p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
+        <a target="_blank" href="2.manual.pdf">Read More</a>
         </p>
-
-         
-
+<p><br><br>
+         <a target="_blank" href="freevib.htm">Go to Manual view on Simple Harmonic Oscillator Experiment(Click here)</a><br><br>
+</p>
           </div>
 
         </section>
@@ -274,33 +265,44 @@ To develop an understanding of stress-strain curves of materials, and learn how 
           <div id="experiment-article-section-6-content" 
           class="content">
             
-            <p>
+             <p>
               
               <b>Q1.</b> 
-              Which steel have you tested? What is its carbon content?   
-               <br/><br/> 
+              Time period of the structure changes when the initial conditions.  <br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q1" id="q1" value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q2.</b> 
-              In what region of a stress vs. strain graph do you find Young’s Modulus? <br/><br/> 
+              Time period is inversely proportional to mass.<br> 
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q2" id="q2"value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q3.</b> 
-              Why do you think we remove the extensometer after yielding occurs? <br/><br/> 
+              Damping increases amplitude of the vibration.  <br> 
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q3" id="q3"value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q4.</b> 
-              What general information is obtained from the tensile test regarding the properties of the material? <br/><br/> 
+              Value of time period depends on mass.  <br> 
+              <input type="radio" name="q4" id="q4" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q4" id="q4" value="0">
+                <font color="red"> False </font> <br/><br/> 
               
               <b>Q5.</b> 
-              Which stress have you calculated: Nominal stress or true stress?  <br/><br/> 
-              <b>Q6.</b>
-              What kind of fracture has occurred and why?  <br/><br/>
-              <b>Q7.</b>
-              Which is the most ductile material? What is its elongation?  <br/><br/>
-
+              Two structures with different masses and stiffnesses can have same time period. <br> 
+              <input type="radio" name="q5" id="q5" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q5" id="q5"value="0">
+                <font color="red"> False </font> <br/><br/> 
+               
             </p>
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
-
 
 
 
@@ -326,17 +328,7 @@ To develop an understanding of stress-strain curves of materials, and learn how 
 	    <p>
 	      Procedure for the experiment is as follows.
 	    </p>
-<p align="justify">
-1. The load pointer is set at zero by adjusting the initial the initial setting mode. <br>
-2. The dial gauge is fixed for measuring elongation of small amounts.<br>
-3. Measure the diameter of the test piece with the help of a vernier calliper at least at three pieces and determine the mean value. Also mark the gauge length.<br>
-4.  Now the specimen is gripped between the upper and middle cross head jaws of the machine.<br>
-5. Start the machine and the specimen is gradually loaded. Note down the load and its corresponding dial gauge reading. The observations are taken until the  specimen breaks<br>
-6. Plot the graph between stress vs. strain.</p>
 
-<p>
-        <a target="_blank" href="Data files/01 Tension_Test.pdf">Read More</a>
-        </p>
 
 	  </div>
 	
@@ -360,16 +352,16 @@ To develop an understanding of stress-strain curves of materials, and learn how 
           class="content">
             <ul>	
               <li>
-                <a href="http://www.instron.in/wa/applications/test_types/tension/default.aspx">http://www.instron.in/wa/applications/test_types/tension/default.aspx</a>
+                “T. Irvine, Partial Fractions in Shock and Vibration Analysis”, Vibrationdata Publications, 1999. 
               </li>
               <li>
-                <a href="http://en.wikipedia.org/wiki/Tensile_strength">http://en.wikipedia.org/wiki/Tensile_strength</a>
+                “Dynamics of structures” by Anil K chopra. 
               </li>  
               <li>
-                <a href="http://civilx.unm.edu/laboratories_ss/mechmat/tensilesteel.html">http://civilx.unm.edu/laboratories_ss/mechmat/tensilesteel.html</a> 
+                “T. Irvine, The State Space Method for Solving Shock and Vibration Problems”, Vibrationdata Publications, 2005. 
               </li>
 <li>
-                Strength of materials by Dr.R.K.Bansal.
+                “J.L. Meriam and L.G. Kraige, Engineering Mechanics”, John Wiley, 2002.
               </li>
             </ul>
           </div>
