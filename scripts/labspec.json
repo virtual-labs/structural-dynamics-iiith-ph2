@@ -55,10 +55,10 @@
                     "init": ["mv /var/www/index.html index.html.default","cp -r ../build/* /var/www/","chmod 775 /var/www/ -R"], 
                     "pause": [], 
                     "publish": [], 
-                    "restore": [], 
+                    "restore": ["restore"], 
                     "resume": [], 
-                    "shutdown": [], 
-                    "start": [], 
+                    "shutdown": ["service apache2 stop"], 
+                    "start": ["service apache2 start"], 
                     "stats": [], 
                     "stop": []
                 }, 
