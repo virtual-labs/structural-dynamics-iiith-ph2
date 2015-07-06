@@ -38,7 +38,7 @@
                 "Civil Engineering"
             ], 
             "id": "eerc06", 
-            "integration_level": 4, 
+            "integration_level": 6, 
             "name": "Structural Dynamics", 
             "server-side": true, 
             "status": "Released", 
