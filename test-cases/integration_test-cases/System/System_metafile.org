@@ -1,0 +1,5 @@
+S.no		Test case link
+1. 	[[https://github.com/Virtual-Labs/structural-dynamics-iiith/blob/master/test-cases/integration_test-cases/System/Structural%20Dynamics_01_Usability_smk.org][Structural Dynamics_01_Usability_smk.org]]
+2. 	[[https://github.com/Virtual-Labs/structural-dynamics-iiith/blob/master/test-cases/integration_test-cases/System/Structural%20Dynamics_02_Forum_smk.org][Structural Dynamics_02_Forum_smk.org]]
+3. 	[[https://github.com/Virtual-Labs/structural-dynamics-iiith/blob/master/test-cases/integration_test-cases/System/Structural%20Dynamics_03_Contact%20us_smk.org][Structural Dynamics_03_Contact us_smk.org]]
+4. 	[[https://github.com/Virtual-Labs/structural-dynamics-iiith/blob/master/test-cases/integration_test-cases/System/Structural%20Dynamics_04_Login_smk.org][Structural Dynamics_04_Login_smk.org]]
