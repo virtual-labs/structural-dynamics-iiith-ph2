@@ -29,10 +29,14 @@ for (q=1;q<=totalquestions;q++){
 		
 	if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
 		if (incorrect==null)
+		{
 		incorrect=q
+		}
 		else
+		{
 		incorrect+="/"+q
 		}
+	}
 	}
 
 if (incorrect==null)
