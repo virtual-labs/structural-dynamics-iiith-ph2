@@ -62,7 +62,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        logIn : function () {
+        logIn() {
             var base = this;
 
             base.$elem.data("owl-originalStyles", base.$elem.attr("style"));
@@ -127,7 +127,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        eachMoveUpdate : function () {
+        eachMoveUpdate() {
             var base = this;
 
             if (base.options.lazyLoad === true) {
@@ -143,7 +143,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        updateVars : function () {
+        updateVars() {
             var base = this;
             if (typeof base.options.beforeUpdate === "function") {
                 base.options.beforeUpdate.apply(this, [base.$elem]);
@@ -185,7 +185,7 @@ if (typeof Object.create !== "function") {
             }, 500);
         },
 
-        wrapItems : function () {
+        wrapItems() {
             var base = this;
             base.$userItems.wrapAll("<div class=\"owl-wrapper\">").wrap("<div class=\"owl-item\"></div>");
             base.$elem.find(".owl-wrapper").wrap("<div class=\"owl-wrapper-outer\">");
@@ -193,7 +193,7 @@ if (typeof Object.create !== "function") {
             base.$elem.css("display", "block");
         },
 
-        baseClass : function () {
+        baseClass() {
             var base = this,
                 hasBaseClass = base.$elem.hasClass(base.options.baseClass),
                 hasThemeClass = base.$elem.hasClass(base.options.theme);
@@ -207,7 +207,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        updateItems : function () {
+        updateItems() {
             var base = this, width, i;
 
             if (base.options.responsive === false) {
@@ -293,7 +293,7 @@ if (typeof Object.create !== "function") {
             $(window).resize(base.resizer);
         },
 
-        updatePosition : function () {
+        updatePosition() {
             var base = this;
             base.jumpTo(base.currentItem);
             if (base.options.autoPlay !== false) {
@@ -301,7 +301,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        appendItemsSizes : function () {
+        appendItemsSizes() {
             var base = this,
                 roundPages = 0,
                 lastItem = base.itemsAmount - base.options.items;
@@ -321,7 +321,7 @@ if (typeof Object.create !== "function") {
             });
         },
 
-        appendWrapperSizes : function () {
+        appendWrapperSizes() {
             var base = this,
                 width = base.$owlItems.length * base.itemWidth;
 
@@ -332,7 +332,7 @@ if (typeof Object.create !== "function") {
             base.appendItemsSizes();
         },
 
-        calculateAll : function () {
+        calculateAll() {
             var base = this;
             base.calculateWidth();
             base.appendWrapperSizes();
@@ -340,7 +340,7 @@ if (typeof Object.create !== "function") {
             base.max();
         },
 
-        calculateWidth : function () {
+        calculateWidth() {
             var base = this;
             base.itemWidth = Math.round(base.$elem.width() / base.options.items);
         },
@@ -359,7 +359,7 @@ if (typeof Object.create !== "function") {
             return maximum;
         },
 
-        min : function () {
+        min() {
             return 0;
         },
 
@@ -389,7 +389,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        buildControls : function () {
+        buildControls() {
             var base = this;
             if (base.options.navigation === true || base.options.pagination === true) {
                 base.owlControls = $("<div class=\"owl-controls\"/>").toggleClass("clickable", !base.browser.isTouch).appendTo(base.$elem);
@@ -402,7 +402,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        buildButtons : function () {
+        buildButtons() {
             var base = this,
                 buttonsWrapper = $("<div class=\"owl-buttons\"/>");
             base.owlControls.append(buttonsWrapper);
@@ -435,7 +435,7 @@ if (typeof Object.create !== "function") {
             });
         },
 
-        buildPagination : function () {
+        buildPagination() {
             var base = this;
 
             base.paginationWrapper = $("<div class=\"owl-pagination\"/>");
@@ -449,7 +449,7 @@ if (typeof Object.create !== "function") {
             });
         },
 
-        updatePagination : function () {
+        updatePagination() {
             var base = this,
                 counter,
                 lastPage,
@@ -528,7 +528,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        updateControls : function () {
+        updateControls() {
             var base = this;
             base.updatePagination();
             base.checkNavigation();
@@ -548,7 +548,7 @@ if (typeof Object.create !== "function") {
             }
         },
 
-        next : function (speed) {
+        next(speed) {
             var base = this;
 
             if (base.isTransition) {
@@ -568,7 +568,7 @@ if (typeof Object.create !== "function") {
             base.goTo(base.currentItem, speed);
         },
 
-        prev : function (speed) {
+        prev(speed) {
             var base = this;
 
             if (base.isTransition) {
@@ -592,7 +592,7 @@ if (typeof Object.create !== "function") {
             base.goTo(base.currentItem, speed);
         },
 
-        goTo : function (position, speed, drag) {
+        goTo(position, speed, drag) {
             var base = this,
                 goToPixel;
 
