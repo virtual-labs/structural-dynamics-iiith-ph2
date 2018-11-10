@@ -19,7 +19,7 @@ correctchoices[5]='a'
 /////Don't edit beyond here//////////////////////////
 
 function gradeit(){
-var incorrect=null
+var incorrect=null;
 for (q=1;q<=totalquestions;q++){
 	var thequestion=eval("document.myquiz.question"+q)
 	for (c=0;c<thequestion.length;c++){

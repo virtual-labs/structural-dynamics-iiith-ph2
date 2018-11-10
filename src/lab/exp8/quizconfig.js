@@ -11,8 +11,8 @@ var totalquestions=4
 //Enter the solutions corresponding to each question:
 var correctchoices=new Array()
 correctchoices[1]='b' //question 1 solution
-correctchoices[2]='b' //question 2 solution, and so on.
-correctchoices[3]='a'
+correctchoices[2]='b'; //question 2 solution, and so on.
+correctchoices[3]='a';
 correctchoices[4]='a'
 
 /////Don't edit beyond here//////////////////////////
@@ -20,7 +20,7 @@ correctchoices[4]='a'
 function gradeit(){
 var incorrect=null
 for (q=1;q<=totalquestions;q++){
-	var thequestion=eval("document.myquiz.question"+q)
+	var thequestion=eval("document.myquiz.question"+q);
 	for (c=0;c<thequestion.length;c++){
 		if (thequestion[c].checked==true)
 		actualchoices[q]=thequestion[c].value

@@ -6,7 +6,7 @@
 ***********************************************/
 
 //Enter total number of questions:
-var totalquestions=5
+var totalquestions=5;
 
 //Enter the solutions corresponding to each question:
 var correctchoices=new Array()
@@ -37,7 +37,7 @@ for (q=1;q<=totalquestions;q++){
 
 if (incorrect==null)
 incorrect="a/b"
-document.cookie='q='+incorrect
+document.cookie='q='+incorrect;
 if (document.cookie=='')
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
@@ -46,7 +46,7 @@ window.location="results.htm"
 
 
 function showsolution(){
-var win2=window.open("","win2","width=200,height=350, scrollbars")
+var win2=window.open("","win2","width=200,height=350, scrollbars");
 win2.focus()
 win2.document.open()
 win2.document.write('<title>Solution</title>')
