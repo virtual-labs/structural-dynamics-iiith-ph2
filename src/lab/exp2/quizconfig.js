@@ -14,7 +14,7 @@ correctchoices[1]='b' //question 1 solution
 correctchoices[2]='b' //question 2 solution, and so on.
 correctchoices[3]='b'
 correctchoices[4]='a'
-correctchoices[5]='a'
+correctchoices[5]="a"
 
 /////Don't edit beyond here//////////////////////////
 
@@ -37,7 +37,7 @@ for (q=1;q<=totalquestions;q++){
 
 if (incorrect==null)
 incorrect="a/b"
-document.cookie='q='+incorrect
+document.cookie="q="+incorrect
 if (document.cookie=='')
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
@@ -49,7 +49,7 @@ function showsolution(){
 var win2=window.open("","win2","width=200,height=350, scrollbars")
 win2.focus()
 win2.document.open()
-win2.document.write('<title>Solution</title>')
+win2.document.write("<title>Solution</title>")
 win2.document.write('<body bgcolor="#FFFFFF">')
 win2.document.write('<center><h3>Solution to Quiz</h3></center>')
 win2.document.write('<center><font face="Arial">')
