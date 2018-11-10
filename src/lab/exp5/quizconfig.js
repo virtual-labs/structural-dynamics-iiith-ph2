@@ -47,7 +47,7 @@ window.location="results.htm"
 
 function showsolution(){
 var win2=window.open("","win2","width=200,height=350, scrollbars")
-win2.focus()
+win2.focus();
 win2.document.open()
 win2.document.write('<title>Solution</title>')
 win2.document.write('<body bgcolor="#FFFFFF">')
