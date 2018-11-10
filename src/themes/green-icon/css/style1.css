@@ -106,15 +106,15 @@ a.active {
 	overflow: visible;
 	margin-left: 0px !important;
 	padding-bottom: 10px !important;
-	padding-top: 10px !important;
+	padding-top: 10px;
 }
 
 .menu-a
 {
-	font-size: 18px !important;
-	font-family: Calibri !important;
+	font-size: 18px;
+	font-family: Calibri;
   color: #2C99CD !important;
-  padding-left: 10px !important;
+  padding-left: 10px;
   padding-bottom: 5px !important;
   padding-top: 5px !important;
   padding-right: 10px !important;
@@ -248,7 +248,7 @@ a.active {
 	
 	.menu-li-active
 	{
-		  background-color: white !important;
+		  background-color: white;
 	}
 	
 	.menu-a-active
@@ -410,8 +410,8 @@ a.active {
 .featured-labs-div
 {
 	margin-left: 0px !important;
-	margin-right: 0px !important;
-	padding-left: 15px !important;
+	margin-right: 0px;
+	padding-left: 15px;
 }
 .border-bottom-img
 {
@@ -655,7 +655,7 @@ a:focus
 }
 
 .sidebar-a:HOVER, .text-h3-darkblue:HOVER {
-	color: #ff6600 !important;
+	color: #ff6600;
 }
 
 .lab-list-row-div
