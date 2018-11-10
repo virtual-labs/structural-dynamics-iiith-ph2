@@ -10,8 +10,8 @@ var totalquestions=4
 
 //Enter the solutions corresponding to each question:
 var correctchoices=new Array()
-correctchoices[1]='b' //question 1 solution
-correctchoices[2]='b' //question 2 solution, and so on.
+correctchoices[1]="b" //question 1 solution
+correctchoices[2]="b" //question 2 solution, and so on.
 correctchoices[3]='a'
 correctchoices[4]='a'
 
