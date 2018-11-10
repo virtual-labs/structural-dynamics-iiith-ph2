@@ -14,7 +14,7 @@ correctchoices[1]="a" //question 1 solution
 correctchoices[2]="a" //question 2 solution, and so on.
 correctchoices[3]="b"
 correctchoices[4]="b"
-correctchoices[5]='a'
+correctchoices[5]="a"
 
 /////Don't edit beyond here//////////////////////////
 
@@ -38,7 +38,7 @@ for (q=1;q<=totalquestions;q++){
 if (incorrect==null)
 incorrect="a/b"
 document.cookie="q="+incorrect
-if (document.cookie=='')
+if (document.cookie=="")
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
 window.location="results.htm"
