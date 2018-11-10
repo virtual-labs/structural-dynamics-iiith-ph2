@@ -37,8 +37,8 @@ for (q=1;q<=totalquestions;q++){
 
 if (incorrect==null)
 incorrect="a/b"
-document.cookie='q='+incorrect
-if (document.cookie=='')
+document.cookie="q="+incorrect
+if (document.cookie=="")
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
 window.location="results.htm"
