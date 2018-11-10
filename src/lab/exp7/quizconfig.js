@@ -29,7 +29,7 @@ for (q=1;q<=totalquestions;q++){
 		
 	if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
 		if (incorrect==null)
-		incorrect=q
+		incorrect=q;
 		else
 		incorrect+="/"+q
 		}
@@ -37,7 +37,7 @@ for (q=1;q<=totalquestions;q++){
 
 if (incorrect==null)
 incorrect="a/b"
-document.cookie='q='+incorrect
+document.cookie='q='+incorrect;
 if (document.cookie=='')
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
