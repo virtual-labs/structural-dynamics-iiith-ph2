@@ -10,11 +10,9 @@ def writefile(fname,s,s1,heading):
 	f.seek(0)
 	f.write(content)
 	print content
-	
 	f.seek(0)
 	content=f.read()
 	k=content.index('<div class="col-md-10 lab-list-col-10">')
-	
 	t1=content.index('<!--edit1-->')
 	print t1
 	f.seek(t1+13)
@@ -94,7 +92,6 @@ while sectionNumber<=len(sectionno):
 f=open("Feedback.html",'w+')
 f.write(template)
 f.seek(0)
-	
 content = f.read()
 content=content.replace('Disciplines and Domains',breadcrumb)
 f.seek(0)
