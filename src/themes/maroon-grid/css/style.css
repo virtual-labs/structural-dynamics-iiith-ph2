@@ -18,7 +18,7 @@ body
 #container
 {
 	margin:0;
-	padding:0
+	padding:0;
 	width:100%;	
 }
 
@@ -114,7 +114,7 @@ nav#lab-article-navigation,nav#experiment-article-navigation
 } 
 nav#lab-article-navigation ul,nav#experiment-article-navigation ul
 {
-	/*margin-left:21px;*/
+	margin-left:21px;
 }
 
 nav#lab-article-navigation ul li,nav#experiment-article-navigation ul li
