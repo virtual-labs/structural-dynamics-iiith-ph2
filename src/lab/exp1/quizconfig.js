@@ -23,11 +23,11 @@ var incorrect=null
 	totalquestions.forEach(function(totalquestions)){
 	var thequestion=eval("document.myquiz.question"+q)
 		thequestion.length.forEach(function(thequestion.length)){
-		if (thequestion.checked==true)
-		actualchoices=thequestion.value
+		if (thequestion.checked.forEach(thequestion.length)==true)
+		actualchoices.forEach(totalquestions)=thequestionforEach(thequestion.length).value
 		}
 		
-	if (actualchoices!=correctchoices){ //process an incorrect choice
+	if (actualchoices.forEach(totalquestions)!=correctchoices.forEach(totalquestions)){ //process an incorrect choice
 		if (incorrect==null)
 		incorrect=q
 		else
@@ -35,11 +35,11 @@ var incorrect=null
 		}
 	}
 
-if (incorrect==null)
-incorrect="a/b"
-document.cookie="q="+incorrect
-if (document.cookie=="")
-alert("Your browser does not accept cookies. Please adjust your browser settings.")
+//if (incorrect==null)
+//incorrect="a/b"
+//document.cookie="q="+incorrect
+//if (document.cookie=="")
+//alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
 window.location="results.htm"
 }
