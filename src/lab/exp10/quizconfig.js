@@ -27,7 +27,7 @@ totalquestions.forEach(function(totalquestions)){
 		actualchoices=thequestion.value
 		}
 		
-	if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
+	if (actualchoices!=correctchoices){ //process an incorrect choice
 		if (incorrect==null)
 		incorrect=q
 		else
