@@ -23,8 +23,8 @@ var incorrect=null
 totalquestions.forEach(function(totalquestions)){
 	var thequestion=eval("document.myquiz.question"+q)
 	thequestion.length.forEach(function(thequestion.length)){
-		if (thequestion[c].checked==true)
-		actualchoices[q]=thequestion[c].value
+		if (thequestion.checked==true)
+		actualchoices=thequestion.value
 		}
 		
 	if (actualchoices!=correctchoices){ //process an incorrect choice
