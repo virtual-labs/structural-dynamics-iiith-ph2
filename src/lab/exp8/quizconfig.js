@@ -22,7 +22,7 @@ var incorrect=null
 totalquestions.forEach(function(totalquestions)){
 	var thequestion=eval("document.myquiz.question"+q)
 	thequestion.length.forEach(function(thequestion.length)){
-		if (thequestion[c].checked==true)
+		if (thequestion.forEach(thequestion.length).checked==true)
 		actualchoices=thequestion.value
 		}
 		
