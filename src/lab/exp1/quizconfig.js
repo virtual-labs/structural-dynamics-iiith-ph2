@@ -13,7 +13,7 @@ var correctchoices=new Array()
 correctchoices[1]='a' //question 1 solution
 correctchoices[2]='a' //question 2 solution, and so on.
 correctchoices[3]='b'
-correctchoices[4]='a'
+correctchoices[4]='b'
 correctchoices[5]='a'
 
 /////Don't edit beyond here//////////////////////////
