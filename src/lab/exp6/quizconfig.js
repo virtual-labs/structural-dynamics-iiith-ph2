@@ -19,7 +19,7 @@ correctchoices[5]='b'
 /////Don't edit beyond here//////////////////////////
 
 function gradeit(){
-var incorrect=null
+var correct=null
 for (q=1;q<=totalquestions;q++){
 	var thequestion=eval("document.myquiz.question"+q)
 	for (c=0;c<thequestion.length;c++){
@@ -27,17 +27,17 @@ for (q=1;q<=totalquestions;q++){
 		actualchoices[q]=thequestion[c].value
 		}
 		
-	if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
-		if (incorrect==null)
-		incorrect=q
+	if (actualchoices[q]==correctchoices[q]){ //process an correct choice
+		if (correct==null)
+		correct=q
 		else
-		incorrect+="/"+q
+		correct+="/"+q
 		}
 	}
 
-if (incorrect==null)
-incorrect="a/b"
-document.cookie='q='+incorrect
+if (correct==null)
+correct="a/b"
+document.cookie='q='+correct
 if (document.cookie=='')
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
@@ -54,8 +54,8 @@ win2.document.write('<body bgcolor="#FFFFFF">')
 win2.document.write('<center><h3>Solution to Quiz</h3></center>')
 win2.document.write('<center><font face="Arial">')
 for (i=1;i<=totalquestions;i++){
-for (temp=0;temp<incorrect.length;temp++){
-if (i==incorrect[temp])
+for (temp=0;temp<correct.length;temp++){
+if (i==correct[temp])
 wrong=1
 }
 if (wrong==1){
@@ -66,6 +66,6 @@ else
 win2.document.write("Question "+i+"="+correctchoices[i]+"<br>")
 }
 win2.document.write('</center></font>')
-win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had incorrectly answered.</h5>")
+win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had correctly answered.</h5>")
 win2.document.close()
 }
