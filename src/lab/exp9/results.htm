@@ -22,7 +22,7 @@
           <td height="25"><p><input type="text" name="p" size="24"></td>
         </tr>
         <tr>
-          <td height="17" bgcolor="#D3FFA8"><strong><font face="Arial">The questions you got wrong:</font></strong></td>
+          <td height="17" bgcolor="#D3FFA8"><strong><font face="Arial">The questions you got correct:</font></strong></td>
           <td height="17"><p><textarea name="T2" rows="3" cols="24" wrap="virtual"></textarea></td>
         </tr>
         <tr>
@@ -51,14 +51,14 @@ parse=n
 
 }
 
-var incorrect=results[parse].split("=")
-incorrect=incorrect[1].split("/")
-if (incorrect[incorrect.length-1]=='b')
-incorrect=""
-document.result[0].value=totalquestions-incorrect.length+" out of "+totalquestions
-document.result[2].value=(totalquestions-incorrect.length)/totalquestions*100+"%"
-for (temp=0;temp<incorrect.length;temp++)
-document.result[1].value+=incorrect[temp]+", "
+var correct=results[parse].split("=")
+correct=correct[1].split("/")
+if (correct[correct.length-1]=='b')
+correct=""
+document.result[0].value=correct.length+" out of "+totalquestions
+document.result[2].value=(correct.length)/totalquestions*100+"%"
+for (temp=0;temp<correct.length;temp++)
+document.result[1].value+=correct[temp]+", "
 
 
 </script>
