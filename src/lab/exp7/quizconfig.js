@@ -27,7 +27,7 @@ for (q=1;q<=totalquestions;q++){
 		actualchoices[q]=thequestion[c].value
 		}
 		
-	if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
+	if (actualchoices[q]==correctchoices[q]){ //process an incorrect choice
 		if (incorrect==null)
 		incorrect=q
 		else
