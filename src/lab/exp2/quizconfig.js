@@ -19,25 +19,25 @@ correctchoices[5]='a'
 /////Don't edit beyond here//////////////////////////
 
 function gradeit(){
-var incorrect=null
+var correct=null
 for (q=1;q<=totalquestions;q++){
 	var thequestion=eval("document.myquiz.question"+q)
 	for (c=0;c<thequestion.length;c++){
 		if (thequestion[c].checked==true)
 		actualchoices[q]=thequestion[c].value
 		}
-		
-	if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
-		if (incorrect==null)
-		incorrect=q
+
+	if (actualchoices[q]==correctchoices[q]){ //process an incorrect choice
+		if (correct==null)
+		correct=q
 		else
-		incorrect+="/"+q
+		correct+="/"+q
 		}
 	}
 
-if (incorrect==null)
-incorrect="a/b"
-document.cookie='q='+incorrect
+if (correct==null)
+correct="a/b"
+document.cookie='q='+correct
 if (document.cookie=='')
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
